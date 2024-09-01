@@ -41,15 +41,15 @@
     <div class="container">
         <h1>Sentiment Analysis with Transfer Learning</h1>
         <p>
-            In this demonstration, we explore the power of <strong>transfer learning</strong>, a technique in machine learning where a model developed for one task is reused as the starting point for a model on a second task. 
-            This approach leverages pre-trained models—models that have already been trained on a large dataset—and fine-tunes them for specific tasks, such as sentiment analysis.
+            We use the power of <strong>transfer learning</strong>, a technique where a model developed for one task is reused as the starting point for a model on a second task. 
+            
         </p>
         <p>
             <strong>Pre-trained models</strong> are typically trained on extensive datasets and can capture a wide range of features that are useful for many different tasks. However, they might not perform optimally on specialized tasks out of the box.
             This is where <strong>transfer learning</strong> comes into play. By fine-tuning a pre-trained model on a smaller, task-specific dataset, we can adapt the model to perform the new task with much better accuracy.
         </p>
         <p>
-            The model you see below has been fine-tuned from a pre-trained model to perform sentiment analysis, distinguishing between positive and negative sentiments in text. This fine-tuning process allows the model to be both accurate and efficient, utilizing the knowledge gained from the pre-trained model while adapting to the specifics of sentiment analysis.
+            Our model has been fine-tuned from "distilbert-base-uncased", a 66 million parameter pre-trained model to perform sentiment analysis, distinguishing between positive and negative sentiments in text. This fine-tuning process allows the model to be both accurate and efficient, utilizing the knowledge gained from the pre-trained model while adapting to the specifics of sentiment analysis.
         </p>
         <div class="embed-container">
             <script
