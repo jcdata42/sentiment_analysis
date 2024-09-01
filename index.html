@@ -3,14 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sentiment Analysis</title>
+    <title>Sentiment Analysis with Transfer Learning</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #007bff;
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .embed-container {
+            margin-top: 30px;
+        }
+        .embed-container gradio-app {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <script
-        type="module"
-        src="https://gradio.s3-us-west-2.amazonaws.com/4.42.0/gradio.js"
-    ></script>
-
-    <gradio-app src="https://cordondata-sentiment-02.hf.space"></gradio-app>
+    <div class="container">
+        <h1>Sentiment Analysis with Transfer Learning</h1>
+        <p>
+            In this demonstration, we explore the power of <strong>transfer learning</strong>, a technique in machine learning where a model developed for one task is reused as the starting point for a model on a second task. 
+            This approach leverages pre-trained models—models that have already been trained on a large dataset—and fine-tunes them for specific tasks, such as sentiment analysis.
+        </p>
+        <p>
+            <strong>Pre-trained models</strong> are typically trained on extensive datasets and can capture a wide range of features that are useful for many different tasks. However, they might not perform optimally on specialized tasks out of the box.
+            This is where <strong>transfer learning</strong> comes into play. By fine-tuning a pre-trained model on a smaller, task-specific dataset, we can adapt the model to perform the new task with much better accuracy.
+        </p>
+        <p>
+            The model you see below has been fine-tuned from a pre-trained model to perform sentiment analysis, distinguishing between positive and negative sentiments in text. This fine-tuning process allows the model to be both accurate and efficient, utilizing the knowledge gained from the pre-trained model while adapting to the specifics of sentiment analysis.
+        </p>
+        <div class="embed-container">
+            <script
+                type="module"
+                src="https://gradio.s3-us-west-2.amazonaws.com/4.42.0/gradio.js"
+            ></script>
+            <gradio-app src="https://cordondata-sentiment-02.hf.space"></gradio-app>
+        </div>
+    </div>
 </body>
 </html>
