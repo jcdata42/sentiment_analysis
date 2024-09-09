@@ -35,6 +35,10 @@
             height: 600px;
             border: none;
         }
+        .warning {
+            color: red;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -49,13 +53,9 @@
         <p>
             Our model has been fine-tuned from "distilbert-base-uncased," a 66-million-parameter pre-trained model, to perform sentiment analysis, distinguishing between positive and negative sentiments in text. Utilizing the broad knowledge gained from pre-training while adapting to the specifics of sentiment analysis.
         </p>
-        <p>
-            <strong>Ours is a ver small model, trained with a limited set of data for educational purposes, so do not expect a great accuracy</strong>
+        <p class="warning">
+            ⚠️ Our model is a very small one, trained with a limited set of data for educational purposes, so please don't expect high accuracy.
         </p>
-        <p>
-            <strong>⚠️ Our model is a very small one, trained with a limited set of data for educational purposes, so please don't expect high accuracy.</strong>
-        </p>
-
         <div class="embed-container">
             <script
                 type="module"
